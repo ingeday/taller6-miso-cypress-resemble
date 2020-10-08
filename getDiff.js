@@ -22,14 +22,14 @@ async function getDiff(){
     // The parameters can be Node Buffers
     // data is the same as usual with an additional getBuffer() function
     const data = await compareImages(
-        await fs.readFile('base.png'),
-        await fs.readFile('later.png'),
+        await fs.readFile('testingVRT/2base.png'),
+        await fs.readFile('testingVRT/2later.png'),
         options
     );
 
     console.log(data);
 
-    await fs.writeFile('output.png', data.getBuffer());
+    await fs.writeFile('testingVRT/2output.png', data.getBuffer());
 }
 
 getDiff();
