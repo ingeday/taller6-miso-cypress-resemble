@@ -1,0 +1,25 @@
+extends layout
+
+block content
+ form(action="." method="POST")
+  input(type="submit" value="Generar Reporte")
+ table(border="1")
+  tr
+   th Fecha
+   th Imagen Base
+   th Imagen Modificada
+   th Diferencias
+   th Observaciones
+  tr
+   each val in data
+    td DD-MM-AAAA
+    td
+     img(src=`./${val[0]}` style="width:220px")
+    td
+     img(src=`./${val[1]}` style="width:220px")
+    td
+     img(src=`./${val[2]}` style="width:220px")
+    td Prueba
+
+
+ 
