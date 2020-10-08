@@ -1,8 +1,8 @@
 extends layout
 
 block content
- form(action="." method="POST")
-  input(type="submit" value="Generar Reporte")
+ div
+  a.btn.btn-primary.btn-lg.btn-block(href="generate") Comparar y Generar Reporte
  table.table
   thead.thead-dark
    tr
@@ -14,14 +14,15 @@ block content
   tbody
   each val in data
    tr 
-    td DD-MM-AAAA
+    td=new Date(`${val[0].substr(-14,10)}`*1000)
     td
      img(src=`./${val[0]}` style="width:220px")
     td
-     img(src=`./${val[1]}` style="width:220px")
+     img(src=`./${val[3]}` style="width:220px")
     td
      img(src=`./${val[2]}` style="width:220px")
-    td Prueba
+    td
+     iframe(src=`./${val[1]}` style="border:none")
 
 
  
