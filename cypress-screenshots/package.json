@@ -1,0 +1,24 @@
+{
+  "name": "miso4208_taller6_cypressscreenshots",
+  "version": "1.0.0",
+  "description": "Sección de cypress para el taller 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpradap/miso4208_taller6_cypressscreenshots.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexpradap/miso4208_taller6_cypressscreenshots/issues"
+  },
+  "homepage": "https://github.com/alexpradap/miso4208_taller6_cypressscreenshots#readme",
+  "devDependencies": {
+    "cypress": "^5.3.0",
+    "mz": "^2.7.0",
+    "resemblejs": "^3.2.5"
+  }
+}
